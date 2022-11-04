@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Watson Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Script for IBM Watson Assistant-->
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "2737e68f-ed9e-4b31-956f-686f323e6b56", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "68046a5a-3ca0-4759-ba40-980c1db7f734", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+    </script>
+</head>
+<body>
+    <nav>
+      <h3>IBM Watson Assignment</h3>
+    </nav>
+
+    <div class="main-div">
+      <div class="text-div">
+        <h3>Hi! I am Bala Abinesh Surya's <br> Watson assistant</h3>
+        <p>I am here in case you are in need of any service</p>
+        <div class="button-div">
+          <a target="_blank" href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fus-south.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-68046a5a-3ca0-4759-ba40-980c1db7f734%3A%3A5451e450-b4fb-4e54-ab5a-0dee5b05d9db&integrationID=2737e68f-ed9e-4b31-956f-686f323e6b56&region=us-south&serviceInstanceID=68046a5a-3ca0-4759-ba40-980c1db7f734">
+            Launch me in new tab
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign up
+{% endblock %}
+
+{% block main %}
+    <div class="form-main-div">
+        <div class="form-div">
+            <h3>Enter all the details</h3>
+            <form method="POST">
+                <label>Email</label> <br>
+                <input class="inputs" type="text" placeholder="Enter your email" name="email"/>
+                
+                <label>Username</label> <br>
+                <input class="inputs" type="text" placeholder="Enter your username" name="username"/>
+
+                <label>Register Number</label> <br> 
+                <input class="inputs" type="number" placeholder="Enter your email" name="number"/>
+
+                <label>Password</label> <br>
+                <input class="inputs" type="password" placeholder="Enter your password" name="password"/>
+            
+                <input class="submit" type="submit"/>
+
+                <div>
+                    <a href="/">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
